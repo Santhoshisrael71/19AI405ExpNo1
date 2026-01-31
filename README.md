@@ -1,6 +1,6 @@
 <h1>ExpNo 1 :Developing AI Agent with PEAS Description</h1>
 <h3>Name: Saravanan N</h3>
-<h3>Register Number/Staff Id: TSML006</h3>
+<h3>Register Number: 212224220088/Staff Id: TSML006</h3>
 
 
 <h3>AIM:</h3>
@@ -41,7 +41,7 @@
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
 
-## PROGRAM :
+## PROGRAM 
 ```
 import random
 
@@ -90,7 +90,7 @@ treat_patient(current_room)
 print("\nFinal Performance Score:", performance)
 
 ```
-## OUTPUT:
+## OUTPUT
 <img width="626" height="518" alt="image" src="https://github.com/user-attachments/assets/7f4e8a75-cf47-42a8-9be9-36cc922c9428" />
 
 ## RESULT
