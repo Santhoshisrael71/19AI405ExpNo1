@@ -40,3 +40,59 @@
 <p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
 <h3>STEP 5:</h3>
 <p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+
+## PROGRAM :
+```
+import random
+
+# Initialize rooms and patient temperatures
+rooms = {
+    "Room 1": random.uniform(97, 102),
+    "Room 2": random.uniform(97, 102)
+}
+
+current_room = "Room 1"
+performance = 0
+
+print("Initial Patient Temperatures:")
+for room, temp in rooms.items():
+    print(room, ":", round(temp, 2), "°F")
+
+print("\nAgent Starting Location:", current_room)
+
+# Function to treat patient
+def treat_patient(room):
+    global performance
+    temperature = rooms[room]
+
+    print("\nChecking", room)
+    print("Patient Temperature:", round(temperature, 2), "°F")
+
+    if temperature > 98.5:
+        print("Patient is unhealthy. Prescribing medicine...")
+        performance += 1
+        rooms[room] = 98.0  # After treatment
+        print("Patient treated successfully.")
+    else:
+        print("Patient is healthy. No treatment needed.")
+
+# Agent checks first room
+treat_patient(current_room)
+
+# Move to second room
+print("\nMoving to another room...")
+performance -= 1
+
+current_room = "Room 2"
+treat_patient(current_room)
+
+# Final Performance
+print("\nFinal Performance Score:", performance)
+
+```
+## OUTPUT:
+<img width="626" height="518" alt="image" src="https://github.com/user-attachments/assets/7f4e8a75-cf47-42a8-9be9-36cc922c9428" />
+
+## RESULT
+Thus the Developing AI Agent with PEAS Description was implemented using python programming.
+
